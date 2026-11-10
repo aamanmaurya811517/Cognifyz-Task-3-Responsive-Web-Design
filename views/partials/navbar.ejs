@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg site-nav sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="/" aria-label="Cognifyz Learning Hub home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand-name">Cognifyz<small>Learning Hub</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link <%= currentPage === '/' ? 'active' : '' %>" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link <%= currentPage === '/courses' ? 'active' : '' %>" href="/courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link <%= currentPage === '/enroll' ? 'active' : '' %>" href="/enroll">Enroll Now</a></li>
+        <li class="nav-item"><a class="nav-link <%= currentPage === '/blog' ? 'active' : '' %>" href="/blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link <%= currentPage === '/contact' ? 'active' : '' %>" href="/contact">Contact</a></li>
+      </ul>
+      <a class="nav-search" href="/courses" aria-label="Search courses"><i class="bi bi-search"></i></a>
+      <a class="btn btn-primary rounded-pill px-4 nav-register" href="/enroll">Register / Login</a>
+    </div>
+  </div>
+</nav>

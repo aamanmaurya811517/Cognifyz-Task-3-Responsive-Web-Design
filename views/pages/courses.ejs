@@ -1,0 +1,48 @@
+<%- include("../partials/head", { title }) %><%- include("../partials/navbar") %>
+<main class="courses-page">
+  <section class="courses-hero">
+    <div class="container">
+      <div class="courses-hero-panel reveal">
+        <div class="courses-hero-copy">
+          <span class="eyebrow"><i class="bi bi-mortarboard-fill"></i> Our Courses</span>
+          <h1>Explore Our Courses</h1>
+          <p>Discover industry-relevant courses designed by experts to help you build in-demand skills.</p>
+        </div>
+        <div class="courses-hero-art" aria-hidden="true">
+          <div class="book-stack"><span></span><span></span><span></span><i class="bi bi-mortarboard-fill"></i></div>
+          <span class="art-spark spark-one">✦</span><span class="art-spark spark-two">✧</span>
+          <span class="art-orbit"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad courses-list-section">
+    <div class="container">
+      <div class="course-tools reveal">
+        <label class="search-field"><i class="bi bi-search"></i><input id="courseSearch" type="search" placeholder="Search courses..." aria-label="Search courses"></label>
+        <div class="filters" aria-label="Filter courses">
+          <button class="filter active" data-filter="all">All Courses</button>
+          <button class="filter" data-filter="development">Development</button>
+          <button class="filter" data-filter="data">Data Science</button>
+          <button class="filter" data-filter="ai">AI &amp; ML</button>
+          <button class="filter" data-filter="design">Design</button>
+          <button class="filter" data-filter="business">Business</button>
+        </div>
+      </div>
+      <div class="row g-4 mt-2" id="courseGrid">
+        <%- include("../partials/course-card", { category:"development", icon:"bi-code-slash", color:"violet", name:"Full Stack Web Development", description:"Beginner to Advanced", rating:"4.8", learners:"12.3K", enrolled:"50K+" }) %>
+        <%- include("../partials/course-card", { category:"development", icon:"bi-cup-hot-fill", color:"java", name:"Java Programming", description:"Core to Advanced", rating:"4.7", learners:"9.4K", enrolled:"32K+" }) %>
+        <%- include("../partials/course-card", { category:"data", icon:"bi-filetype-py", color:"python", name:"Python for Data Science", description:"Data • ML • Analytics", rating:"4.8", learners:"11.1K", enrolled:"46K+" }) %>
+        <%- include("../partials/course-card", { category:"ai", icon:"bi-cpu-fill", color:"ai", name:"Generative AI & Machine Learning", description:"Build Real-world AI Apps", rating:"4.9", learners:"6.8K", enrolled:"28K+" }) %>
+        <%- include("../partials/course-card", { category:"design", icon:"bi-palette-fill", color:"design", name:"UI/UX Design", description:"Design • Prototype • Create", rating:"4.6", learners:"5.2K", enrolled:"18K+" }) %>
+        <%- include("../partials/course-card", { category:"data", icon:"bi-bar-chart-fill", color:"analytics", name:"Data Science & Analytics", description:"SQL • Python • Insights", rating:"4.7", learners:"7.8K", enrolled:"24K+" }) %>
+        <%- include("../partials/course-card", { category:"business", icon:"bi-briefcase-fill", color:"business", name:"Digital Marketing", description:"SEO • Social Media • Growth", rating:"4.5", learners:"4.8K", enrolled:"15K+" }) %>
+        <%- include("../partials/course-card", { category:"development", icon:"bi-cloud-fill", color:"cloud", name:"Cloud Computing (AWS)", description:"Cloud • DevOps • Deployment", rating:"4.8", learners:"6.2K", enrolled:"21K+" }) %>
+      </div>
+      <p class="empty-state d-none" id="emptyCourses">No matching courses. Try another search.</p>
+      <div class="course-bottom-cta reveal"><div class="mini-laptop"><i class="bi bi-play-fill"></i></div><div><h3>Ready to start your learning journey?</h3><p>Choose a course and build skills that move you forward.</p></div><a href="/enroll" class="btn btn-primary rounded-pill">Enroll Now <i class="bi bi-arrow-right ms-2"></i></a></div>
+    </div>
+  </section>
+</main>
+<%- include("../partials/footer") %><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="/js/main.js"></script></body></html>

@@ -1,0 +1,12 @@
+COGNIFYZ TASK 3 – LOCAL IMAGE ASSETS
+
+All five images below are bundled locally in this project under public/assets/ and are referenced by the website. They were supplied by the project owner in this conversation.
+
+- community-student.png — home page hero visual (student with books and 200+ students joined badge).
+- collaborative-workspace.png — home page “Why choose Cognifyz?” section.
+- coding-workspace.png — blog card for web development.
+- ai-data-vortex.png — blog card for AI and machine learning.
+- cafe-collaboration.png — blog card for career growth and collaboration.
+- student-learning.png — previously supplied learner image retained as an additional local asset.
+
+The website no longer depends on remote Unsplash image URLs for its page photography. Bootstrap, Bootstrap Icons and Google Fonts are still loaded from their CDNs, so those design libraries need an internet connection.
