@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cognifyz Task 3 – Learning Hub
 
 A responsive multi-page education website created for **Cognifyz Technologies Full Stack Development Internship – Task 3: Advanced CSS Styling and Responsive Design**.
@@ -77,3 +78,7 @@ git push -u origin main
 ```
 
 \n## Visual update (reference-inspired)\n- Colorful three-part Cognifyz brand mark built with CSS.\n- Course cards use four-across desktop layout, vivid technology icons, ratings and enrollment counts.\n- Courses page includes a blue gradient hero, CSS book-and-graduation-cap illustration, category filters and a call-to-action panel.\n- Enrollment page includes a fully CSS-built animated computer scene, orbiting rings, floating learning icons and a progress toast.\n- The supplied and generated visual assets are stored locally in `public/assets/`: `community-student.png`, `collaborative-workspace.png`, `coding-workspace.png`, `ai-data-vortex.png`, and `cafe-collaboration.png`. The earlier `student-learning.png` is retained as an extra asset. All home and blog page photographs now load from local files rather than remote Unsplash image URLs.\n- No animation library is required; the effects use CSS keyframes and the existing IntersectionObserver reveal.\n
+=======
+# Cognifyz-Task-3-Responsive-Web-Design
+Task 3 of Cognifyz Technologies Full Stack Web Development Internship – A modern responsive educational website built using HTML, CSS, JavaScript, Bootstrap 5, Node.js, Express.js and EJS.
+>>>>>>> 49aa26fb041af704cacbae65c8264c9853abed49
